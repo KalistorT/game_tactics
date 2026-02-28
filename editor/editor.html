@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Editor de Mapas</title>
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+
+<h2>EDITOR DE MAPAS</h2>
+
+<div class="toolbar">
+
+    <h3>Camada</h3>
+    <button onclick="editLayer='ground'">Ground</button>
+    <button onclick="editLayer='objects'">Objects</button>
+
+    <h3>Ground</h3>
+    <button onclick="selectedGround=0">Grass</button>
+    <button onclick="selectedGround=1">Water</button>
+    <button onclick="selectedGround=2">Stone</button>
+
+    <h3>Objects</h3>
+    <button onclick="selectedObject=0">Nada</button>
+    <button onclick="selectedObject=1">Tree</button>
+
+    <br><br>
+
+    <button onclick="exportMap()">Salvar Mapa</button>
+    <input type="file" onchange="importMap(event)">
+
+</div>
+
+<div id="grid"></div>
+
+<script src="editor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Tactics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div id="winner-screen">
+    <div id="winner-text"></div>
+    <button onclick="restartGame()">🔄 Jogar Novamente</button>
+</div>
+<body>
+
+<h1>Mini Tactics</h1>
+
+<!-- TELA DE SELEÇÃO -->
+<div id="selection-screen">
+
+    <h2>Escolha os Personagens</h2>
+
+    <div class="team-select">
+        <h3>Time 1</h3>
+        <div id="team1-select"></div>
+    </div>
+
+    <div class="team-select">
+        <h3>Time 2</h3>
+        <div id="team2-select"></div>
+    </div>
+
+    <button onclick="startGame()" class="start-btn">
+        🚀 Iniciar Batalha
+    </button>
+
+</div>
+
+<!-- TELA DO JOGO -->
+<div id="game-screen" style="display:none;">
+
+    <h2 id="turnIndicator">Turno do Time 1</h2>
+
+    <button onclick="endTurn()" class="pass-btn">
+        ⏭ Passar Turno
+    </button>
+
+    <div id="grid"></div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>

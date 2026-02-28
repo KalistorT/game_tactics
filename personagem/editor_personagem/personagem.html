@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Editor de Personagem</title>
+<link rel="stylesheet" href="personagem.css">
+</head>
+<body>
+
+<h2>EDITOR DE PERSONAGEM</h2>
+
+<div class="container">
+
+    <label>Nome:</label>
+    <input type="text" id="nome">
+
+    <label>Classe:</label>
+    <select id="classe">
+        <option value="guerreiro">Guerreiro</option>
+        <option value="arqueiro">Arqueiro</option>
+        <option value="mago">Mago</option>
+        <option value="clerigo">Clérigo</option>
+    </select>
+
+    <h3>Atributos</h3>
+
+    <label>Ataque:</label>
+    <input type="number" id="atk" value="10">
+
+    <label>Defesa:</label>
+    <input type="number" id="def" value="5">
+
+    <label>Sorte:</label>
+    <input type="number" id="sorte" value="5">
+
+    <label>Fé:</label>
+    <input type="number" id="fe" value="5">
+
+    <label>Agilidade:</label>
+    <input type="number" id="agi" value="5">
+
+    <label>Vida:</label>
+    <input type="number" id="vida" value="100">
+    
+    <label>MP:</label>
+    <input type="number" id="mp" value="50">
+
+    <label>Precisão:</label>
+    <input type="number" id="precisao" value="80">
+
+    <h3>Sprite</h3>
+    <input type="file" id="sprite">
+
+    <h3>Skills</h3>
+    <div id="skillsContainer"></div>
+    <button onclick="addSkill()">Adicionar Skill</button>
+
+    <br><br>
+
+    <button onclick="salvarPersonagem()">Salvar Personagem</button>
+
+</div>
+
+<script src="personagem.js"></script>
+</body>
+</html>

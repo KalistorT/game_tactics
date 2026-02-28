@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    background: #222;
+    color: white;
+    text-align: center;
+}
+
+.toolbar {
+    margin-bottom: 20px;
+}
+
+#grid {
+    display: grid;
+    margin: auto;
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+}

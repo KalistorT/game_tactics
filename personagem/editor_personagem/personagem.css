@@ -1,0 +1,18 @@
+body {
+    background: #1e1e1e;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    padding: 5px;
+}
